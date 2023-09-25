@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct GroupMemberFilterView: View {
+    @Binding var currentViewIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView {
+            Text("므엥")
+        }
+        Button {
+            currentViewIndex += 1
+        } label: {
+            Text("다음")
+        }
+    }//: body
 }
 
 #Preview {
-    GroupMemberFilterView()
+    GroupMemberFilterView(currentViewIndex: .constant(5))
 }

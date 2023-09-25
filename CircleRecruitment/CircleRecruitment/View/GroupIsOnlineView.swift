@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct GroupIsOnlineView: View {
+    @Binding var currentViewIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView {
+            Text("온라인 여부")
+        }
+        Button {
+            currentViewIndex += 1
+        } label: {
+            Text("다음")
+        }
+    }//: body
 }
 
 #Preview {
-    GroupIsOnlineView()
+    GroupIsOnlineView(currentViewIndex: .constant(3))
 }

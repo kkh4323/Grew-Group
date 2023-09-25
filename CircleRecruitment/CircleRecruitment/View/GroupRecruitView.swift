@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct GroupRecruitView: View {
+    @Binding var currentViewIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView {
+            Text("모임원 누구")
+        }
+        Button {
+            currentViewIndex += 1
+        } label: {
+            Text("다음")
+        }
+    }//: body
 }
 
 #Preview {
-    GroupRecruitView()
+    GroupRecruitView(currentViewIndex: .constant(4))
 }

@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct GroupCategoryView: View {
+    @Binding var currentViewIndex: Int
+    
     var body: some View {
-        Text("화이팅화이팅!")
-    }
+        ScrollView {
+            Text("카테고리")
+        }
+        Button {
+            currentViewIndex += 1
+        } label: {
+            Text("다음")
+        }
+    }//: body
 }
 
 #Preview {
-    GroupCategoryView()
+    GroupCategoryView(currentViewIndex: .constant(1))
 }

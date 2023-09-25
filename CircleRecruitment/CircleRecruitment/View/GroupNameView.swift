@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct GroupNameView: View {
+    @Binding var currentViewIndex: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ScrollView {
+            Text("이름")
+        }
+        Button {
+            currentViewIndex += 1
+        } label: {
+            Text("다음")
+        }
+    }//: body
 }
 
 #Preview {
-    GroupNameView()
+    GroupNameView(currentViewIndex: .constant(2))
 }
