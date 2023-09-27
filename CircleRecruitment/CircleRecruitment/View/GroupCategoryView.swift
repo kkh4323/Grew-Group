@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GroupCategoryView: View {
-
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 4) {

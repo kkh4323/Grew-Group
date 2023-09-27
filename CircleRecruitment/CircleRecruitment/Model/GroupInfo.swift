@@ -1,5 +1,5 @@
 //
-//  NewCircle.swift
+//  GroupInfo.swift
 //  CircleRecruitment
 //
 //  Created by KangHo Kim on 2023/09/21.
@@ -12,7 +12,7 @@ struct GroupInfo: Identifiable {
     /// 카테고리
     let category: String
     /// 모임 이름
-    let meetingTitle: String
+    let title: String
     /// 모임 설명
     var description: String
     /// 모임 썸네일 이미지
