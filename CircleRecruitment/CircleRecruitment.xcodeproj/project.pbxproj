@@ -22,6 +22,7 @@
 		9FCB402F2ABC317E00675679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB402E2ABC317E00675679 /* Assets.xcassets */; };
 		9FCB40322ABC317E00675679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCB40312ABC317E00675679 /* Preview Assets.xcassets */; };
 		9FCB403A2ABC324300675679 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB40392ABC324300675679 /* Club.swift */; };
+		9FDD2E222AC40090002A1896 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD2E212AC40090002A1896 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9FCB402E2ABC317E00675679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCB40312ABC317E00675679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FCB40392ABC324300675679 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		9FDD2E212AC40090002A1896 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				9F6893F32ABD865600B1A712 /* GroupAlertView.swift */,
 				9F6893F52ABD868900B1A712 /* GroupAddressView.swift */,
 				9F2D55002AC14FC50003148A /* GrewProgressViewStyle.swift */,
+				9FDD2E212AC40090002A1896 /* LocationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				9FCB402B2ABC317B00675679 /* CircleRecruitmentApp.swift in Sources */,
 				9F6893F22ABD863400B1A712 /* GroupCheckFeeView.swift in Sources */,
 				9F2D55012AC14FC50003148A /* GrewProgressViewStyle.swift in Sources */,
+				9FDD2E222AC40090002A1896 /* LocationView.swift in Sources */,
 				9F6893EC2ABD85AB00B1A712 /* GroupRecruitView.swift in Sources */,
 				9F6893F62ABD868900B1A712 /* GroupAddressView.swift in Sources */,
 			);

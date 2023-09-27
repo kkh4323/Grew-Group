@@ -8,20 +8,63 @@
 import SwiftUI
 
 struct GroupCategoryView: View {
-    @Binding var currentViewIndex: Int
-    
+
     var body: some View {
         ScrollView {
-            Text("카테고리")
-        }
-        Button {
-            currentViewIndex += 1
-        } label: {
-            Text("다음")
-        }
+            VStack(alignment: .leading, spacing: 4) {
+                Text("어떤 주제를 선택해 볼까요?")
+                    .font(.title2).fontWeight(.semibold)
+                    .padding(.bottom,30)
+                Spacer()
+                /*LazyVGrid(columns: gridItems) {
+                 ForEach(0..<groupInfo.myCategories.count, id: \.self) { index in
+                 let category = myCategories[index]
+                 let categoryName = category["title"] as? String ?? ""
+                 let isSelected = selectedFirstCategory == index
+                 
+                 VStack {
+                 Capsule()
+                 .fill(isSelected ? Color.green : Color.white)
+                 .stroke(Color.gray, lineWidth: 1.5)
+                 .frame(height: 40)
+                 .overlay(
+                 Text(myCategories[index]["title"] as? String ?? "")
+                 .font(.body)
+                 )
+                 }
+                 .onTapGesture {
+                 self.selectedFirstCategory = index
+                 }
+                 }
+                 }*/
+                Spacer()
+                Divider()
+                Spacer()
+                /*LazyVGrid(columns: gridItems) {
+                 ForEach(0..<secondCategories.count, id: \.self) { index in
+                 let isSelectedSecond = selectedSecondCategory == index
+                 VStack {
+                 Capsule()
+                 .fill(isSelectedSecond ? Color.green : Color.white)
+                 .stroke(Color.gray, lineWidth: 1.5)
+                 .frame(height: 40)
+                 .overlay(
+                 Text(secondCategories[index])
+                 .font(.body)
+                 )
+                 }
+                 .onTapGesture {
+                 self.selectedSecondCategory = index
+                 
+                 }
+                 }
+                 }*/
+            }//: VStack
+            .padding()
+        }//: ScrollView
     }//: body
 }
 
 #Preview {
-    GroupCategoryView(currentViewIndex: .constant(1))
+    GroupCategoryView()
 }

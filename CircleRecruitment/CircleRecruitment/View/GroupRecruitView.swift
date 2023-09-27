@@ -11,14 +11,16 @@ struct GroupRecruitView: View {
     @Binding var currentViewIndex: Int
     
     var body: some View {
-        ScrollView {
-            Text("모임원 누구")
-        }
-        Button {
-            currentViewIndex += 1
-        } label: {
-            Text("다음")
-        }
+        VStack {
+            ScrollView {
+                Text("온라인 여부")
+            }//: ScrollView
+            Button {
+                currentViewIndex += 1
+            } label: {
+                Text("다음")
+            }//: Button
+        }//: VStack
     }//: body
 }
 

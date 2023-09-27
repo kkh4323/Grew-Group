@@ -35,42 +35,48 @@ struct ContentView: View {
                 .padding(.horizontal)
             }//: VStack
             ZStack {
-                if currentViewIndex == 1 {
-                    GroupCategoryView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 1
-                        })
-                } else if currentViewIndex == 2 {
-                    GroupNameView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 2
-                        })
-                } else if currentViewIndex == 3 {
-                    GroupIsOnlineView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 3
-                        })
-                } else if currentViewIndex == 4 {
-                    GroupRecruitView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 4
-                        })
-                } else if currentViewIndex == 5 {
-                    GroupMemberFilterView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 5
-                        })
-                } else if currentViewIndex == 6 {
-                    GroupMaximumMembersView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 6
-                        })
-                } else if currentViewIndex == 7 {
-                    GroupCheckFeeView(currentViewIndex: $currentViewIndex)
-                        .onAppear(perform: {
-                            progressBarValue = (100 / 7) * 7
-                        })
-                }
+                VStack {
+                    if currentViewIndex == 1 {
+                        GroupCategoryView()
+                            .onAppear(perform: {
+                                progressBarValue = (100 / 5) * 1
+                            })
+                    } else if currentViewIndex == 2 {
+                        GroupNameView()
+                            .onAppear(perform: {
+                                progressBarValue = (100 / 5) * 2
+                            })
+                    } else if currentViewIndex == 3 {
+                        GroupMaximumMembersView()
+                            .onAppear(perform: {
+                                progressBarValue = (100 / 5) * 3
+                            })
+                    } else if currentViewIndex == 4 {
+                        GroupCheckFeeView()
+                            .onAppear(perform: {
+                                progressBarValue = (100 / 5) * 4
+                            })
+                    } else if currentViewIndex == 5 {
+                        GroupAlertView()
+                            .onAppear(perform: {
+                                progressBarValue = (100 / 5) * 5
+                            })
+                    }
+                    if currentViewIndex < 5 {
+                        Button {
+                            currentViewIndex += 1
+                        } label: {
+                            Text("다음")
+                                .font(.title2.bold())
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 60)
+                                .foregroundColor(.white)
+                                .background(Color.green)
+                                .cornerRadius(10)
+                                .padding(.horizontal)
+                        }//: Button
+                    }
+                }//: VStack
             }//: ZStack
         }//: VStack
     }//: body
