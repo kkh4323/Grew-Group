@@ -10,10 +10,7 @@
 		9F2D55012AC14FC50003148A /* GrewProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D55002AC14FC50003148A /* GrewProgressViewStyle.swift */; };
 		9F6893E62ABD856E00B1A712 /* GroupCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893E52ABD856E00B1A712 /* GroupCategoryView.swift */; };
 		9F6893E82ABD857E00B1A712 /* GroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893E72ABD857E00B1A712 /* GroupNameView.swift */; };
-		9F6893EA2ABD859300B1A712 /* GroupIsOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893E92ABD859300B1A712 /* GroupIsOnlineView.swift */; };
-		9F6893EC2ABD85AB00B1A712 /* GroupRecruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893EB2ABD85AB00B1A712 /* GroupRecruitView.swift */; };
-		9F6893EE2ABD85BE00B1A712 /* GroupMemberFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893ED2ABD85BE00B1A712 /* GroupMemberFilterView.swift */; };
-		9F6893F02ABD85E900B1A712 /* GroupMaximumMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893EF2ABD85E900B1A712 /* GroupMaximumMembersView.swift */; };
+		9F6893F02ABD85E900B1A712 /* GroupMembersEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893EF2ABD85E900B1A712 /* GroupMembersEditView.swift */; };
 		9F6893F22ABD863400B1A712 /* GroupCheckFeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893F12ABD863400B1A712 /* GroupCheckFeeView.swift */; };
 		9F6893F42ABD865600B1A712 /* GroupAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893F32ABD865600B1A712 /* GroupAlertView.swift */; };
 		9F6893F62ABD868900B1A712 /* GroupAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6893F52ABD868900B1A712 /* GroupAddressView.swift */; };
@@ -29,10 +26,7 @@
 		9F2D55002AC14FC50003148A /* GrewProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrewProgressViewStyle.swift; sourceTree = "<group>"; };
 		9F6893E52ABD856E00B1A712 /* GroupCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCategoryView.swift; sourceTree = "<group>"; };
 		9F6893E72ABD857E00B1A712 /* GroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupNameView.swift; sourceTree = "<group>"; };
-		9F6893E92ABD859300B1A712 /* GroupIsOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupIsOnlineView.swift; sourceTree = "<group>"; };
-		9F6893EB2ABD85AB00B1A712 /* GroupRecruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRecruitView.swift; sourceTree = "<group>"; };
-		9F6893ED2ABD85BE00B1A712 /* GroupMemberFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberFilterView.swift; sourceTree = "<group>"; };
-		9F6893EF2ABD85E900B1A712 /* GroupMaximumMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMaximumMembersView.swift; sourceTree = "<group>"; };
+		9F6893EF2ABD85E900B1A712 /* GroupMembersEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMembersEditView.swift; sourceTree = "<group>"; };
 		9F6893F12ABD863400B1A712 /* GroupCheckFeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCheckFeeView.swift; sourceTree = "<group>"; };
 		9F6893F32ABD865600B1A712 /* GroupAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAlertView.swift; sourceTree = "<group>"; };
 		9F6893F52ABD868900B1A712 /* GroupAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddressView.swift; sourceTree = "<group>"; };
@@ -62,10 +56,7 @@
 				9FCB402C2ABC317B00675679 /* ContentView.swift */,
 				9F6893E52ABD856E00B1A712 /* GroupCategoryView.swift */,
 				9F6893E72ABD857E00B1A712 /* GroupNameView.swift */,
-				9F6893E92ABD859300B1A712 /* GroupIsOnlineView.swift */,
-				9F6893EB2ABD85AB00B1A712 /* GroupRecruitView.swift */,
-				9F6893ED2ABD85BE00B1A712 /* GroupMemberFilterView.swift */,
-				9F6893EF2ABD85E900B1A712 /* GroupMaximumMembersView.swift */,
+				9F6893EF2ABD85E900B1A712 /* GroupMembersEditView.swift */,
 				9F6893F12ABD863400B1A712 /* GroupCheckFeeView.swift */,
 				9F6893F32ABD865600B1A712 /* GroupAlertView.swift */,
 				9F6893F52ABD868900B1A712 /* GroupAddressView.swift */,
@@ -191,17 +182,14 @@
 			files = (
 				9F6893F42ABD865600B1A712 /* GroupAlertView.swift in Sources */,
 				9F6893E62ABD856E00B1A712 /* GroupCategoryView.swift in Sources */,
-				9F6893F02ABD85E900B1A712 /* GroupMaximumMembersView.swift in Sources */,
+				9F6893F02ABD85E900B1A712 /* GroupMembersEditView.swift in Sources */,
 				9F6893E82ABD857E00B1A712 /* GroupNameView.swift in Sources */,
 				9FCB403A2ABC324300675679 /* Club.swift in Sources */,
-				9F6893EA2ABD859300B1A712 /* GroupIsOnlineView.swift in Sources */,
-				9F6893EE2ABD85BE00B1A712 /* GroupMemberFilterView.swift in Sources */,
 				9FCB402D2ABC317B00675679 /* ContentView.swift in Sources */,
 				9FCB402B2ABC317B00675679 /* CircleRecruitmentApp.swift in Sources */,
 				9F6893F22ABD863400B1A712 /* GroupCheckFeeView.swift in Sources */,
 				9F2D55012AC14FC50003148A /* GrewProgressViewStyle.swift in Sources */,
 				9FDD2E222AC40090002A1896 /* LocationView.swift in Sources */,
-				9F6893EC2ABD85AB00B1A712 /* GroupRecruitView.swift in Sources */,
 				9F6893F62ABD868900B1A712 /* GroupAddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

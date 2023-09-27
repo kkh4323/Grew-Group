@@ -1,5 +1,5 @@
 //
-//  GroupMaximumMembersView.swift
+//  GroupMembersEditView.swift
 //  CircleRecruitment
 //
 //  Created by KangHo Kim on 2023/09/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroupMaximumMembersView: View {
+struct GroupMembersEditView: View {
     @State private var gender: Gender = .any
     @State private var minimumAge = 20
     @State private var maximumAge = 20
@@ -87,5 +87,5 @@ struct GroupMaximumMembersView: View {
 }
 
 #Preview {
-    GroupMaximumMembersView()
+    GroupMembersEditView()
 }

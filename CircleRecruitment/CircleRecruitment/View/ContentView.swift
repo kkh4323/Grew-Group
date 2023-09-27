@@ -47,7 +47,7 @@ struct ContentView: View {
                                 progressBarValue = (100 / 5) * 2
                             })
                     } else if currentViewIndex == 3 {
-                        GroupMaximumMembersView()
+                        GroupMembersEditView()
                             .onAppear(perform: {
                                 progressBarValue = (100 / 5) * 3
                             })
